@@ -52,7 +52,7 @@ h2{
 
   
   nav {
-   padding: 5vh 8vw;
+   padding: 3vh 8vw;
     color:black;
     display: flex;
     justify-content: space-between;
@@ -61,7 +61,10 @@ h2{
   /* nav h2{
     font-size: xx-large;
   } */
-
+.nav_open{
+  width: 10%;
+  display: none;
+}
   nav ul {
     list-style-type: none;
     margin: 0;
@@ -161,6 +164,7 @@ footer{
  
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 5vh 8vw;
   background: rgb(255,248,185);
 background: linear-gradient(90deg, rgba(255,248,185,1) 0%, rgba(250,215,244,1) 70%);
@@ -215,4 +219,56 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
 }
+#res_nav{
+  display: flex;
+ justify-content: center;
+  background-color: #d887c6;
+  position: absolute;
+  width: 100vw;
+  padding: 5rem;
+  display: none;
+}
+#res_nav ul{
+  list-style-type: none;
+ display: flex;
+ flex-direction: column;
+ gap: 1rem;
+ text-align: center;
+}
+#res_nav ul li{
+  color: white;
+  font-size: -webkit-xxx-large;
+}
+#res_nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+#nav_close_id{
+  display: none;
+}
 
+@media only screen and (max-width: 1024px){
+  #footer_first_div{
+    margin-top: 10vh;
+  }
+  #footer_second_ul{
+    margin-top: 10vh;
+    flex-direction: column;
+  }
+  #contact_img{
+    width: 64%;
+  }
+  #about img{
+    width: 23%;
+  }
+  nav{
+    padding: 2vh 8vw;
+  }
+  nav ul{
+    display: none;
+  }
+  .nav_open{
+    display: block;
+  }
+ 
+}
